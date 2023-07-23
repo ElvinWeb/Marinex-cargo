@@ -1,0 +1,842 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* --------------------------------------------------------Navbar section----------------------------------------------------- */
+.header {
+  position: sticky;
+  height: 60px;
+  top: 0;
+  width: 100%;
+  background: #254083;
+  box-shadow: 0px 1px 7px rgba(168, 168, 168, 0.25);
+  z-index: 100;
+}
+.navbar {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plus,
+.menu-icon {
+  display: none;
+}
+.navbar .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  cursor: pointer;
+}
+.phone .num1 {
+  transition: all 0.3s ease;
+}
+.phone .num1 span {
+  transition: all 0.3s ease;
+}
+.phone .num2 {
+  transition: all 0.3s ease;
+}
+.phone .num2 span {
+  transition: all 0.3s ease;
+}
+.phone .num2 span:hover {
+  transition: all 0.3s ease;
+  color: #ffab21;
+}
+.phone .num1 span:hover {
+  transition: all 0.3s ease;
+  color: #ffab21;
+}
+.phone .num1:hover {
+  transform: scale(1.1);
+}
+.phone .num2:hover {
+  transform: scale(1.1);
+}
+.currency {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0em;
+  color: #ffffff;
+  justify-content: space-between;
+  display: flex;
+  gap: 14px;
+  margin-top: 15px;
+}
+.currency i {
+  font-weight: 200;
+}
+.currency h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.navbar .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.items .social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.navbar .items i {
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+.navbar .items i:hover {
+  transform: scale(1.1);
+}
+.navbar .phone span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.navbar .sign {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-left: 25px;
+  width: 100%;
+}
+.navbar .sign a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0em;
+  align-items: center;
+  margin-top: 8px;
+  transition: all 0.35s ease;
+}
+.navbar .sign a:hover {
+  color: #ffab21;
+  transform: scale(1.1);
+}
+/* ------Scroll button--------- */
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress .progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffab21;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: #254083;
+
+}
+/* --------------------------------------------------------Menu section----------------------------------------------------- */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menubar {
+  height: 125px;
+  top: 0px;
+  background: #fafafa;
+  box-shadow: 0px 2px 7px rgba(138, 138, 138, 0.25);
+}
+.menubar .container .logo {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.menubar .container .logo img {
+  width: 87px;
+}
+
+.services .services_items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 22px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.services .services_items li {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0em;
+  font-style: normal;
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+.services .services_items li a {
+  position: relative;
+  display: block;
+  transition: 0.5s;
+  z-index: 0;
+  text-decoration: none;
+  color: #404040;
+}
+.services .services_items li a:hover {
+  color: #ffffff;
+}
+.services .services_items li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #ffab21;
+  border-bottom: 1px solid #ffab21;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.5s;
+}
+.services .services_items li a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.services .services_items li a:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffab21;
+  transform: scale(0);
+  transition: 0.5s;
+  z-index: -1;
+}
+.services .services_items li a:hover:after {
+  transform: scale(1);
+}
+.menu_items li a {
+  text-decoration: none;
+  color: #254083;
+}
+.container .btn {
+  border-radius: 10px;
+  background: #ffab21;
+  box-shadow: 0px 2px 7px #bdc2ff;
+  cursor: pointer;
+  border: none;
+  width: 224px;
+  height: 40px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* -------------------------------------------------------- Main-section  ----------------------------------------------------- */
+.main_container {
+  background-image: url("../Project photos/background_slider.jpg");
+  background-size: cover;
+  height: 490px;
+  top: 0px;
+  box-shadow: 0px 2px 7px rgba(138, 138, 138, 0.25);
+}
+.item .main_section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+}
+.main_section .section-text h1 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0em;
+  font-weight: 900;
+  font-size: 50px;
+  color: #ffffff;
+}
+.main_section .section-text h3 {
+  color: #404040;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0em;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 35px;
+}
+.slider .section_photo img {
+  width: 470px;
+  margin: 35px 50px;
+}
+.owl-carousel {
+  position: relative;
+  align-items: center;
+  display: flex !important;
+}
+
+/* -------------------------------------------------------- Calculation section ----------------------------------------------------- */
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: #404040;
+}
+
+.main_section1 {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_section1 .calc_section {
+  margin-left: 50px;
+}
+.calc_section .calc_text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  color: #254083;
+}
+.calc_section .calc_text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  width: 450px;
+  color: #58595b;
+}
+.main_section1 .calc_photo img {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+.main_section1 .calc_section .calculation input {
+  background: #ffffff;
+  border: 0.5px solid #005b7f;
+  border-radius: 10px;
+  width: 40%;
+  height: 40px;
+  outline: none;
+  padding-left: 30px;
+}
+.main_section1 .calc_section .calculation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 18px;
+}
+.calc_section .calculation #country {
+  border: none;
+  outline: none;
+  color: #254083;
+}
+.calc_section .calculation .calc_btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  color: #ffffff;
+  background: #254083;
+  border-radius: 10px;
+  width: 615px;
+  height: 40px;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 7px #bdc2ff;
+}
+/*-------------------------------------------------------nice-select ----------------------------------------------------*/
+.select-btn {
+  width: 40% !important;
+  height: 40px !important;
+  background: #ffffff !important;
+  border: 0.5px solid #005b7f !important;
+  border-radius: 10px !important;
+  padding: 10px 0px 10px 30px !important;
+  color: #404040 !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  appearance: none;
+  clear: none !important;
+  font-family: "Montserrat", sans-serif;
+}
+.select-btn .list {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+  box-sizing: border-box;
+  margin-top: 4px;
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+}
+
+/* -------------------------------------------------------- Rates section ----------------------------------------------------- */
+.flag_logo {
+  background: #ffffff;
+  border: 0.5px solid #005b7f;
+  border-radius: 10px;
+  width: 139px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.mobile-table {
+  display: none;
+}
+
+.rates_header {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+.rates_header h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  color: #254083;
+  width: 100%;
+  text-align: center;
+  margin-left: 60px;
+}
+.rates-table .rates-table-price .rates-header-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 25px;
+  margin-left: 130px;
+}
+
+.rates-table .rates-table-product td,
+.rates-table .rates-table-liquid td,
+.rates-table .rates-table-price .rates-header-items td {
+  color: #404040;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 25px;
+}
+.rates-table {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.rates-table-price .rates-table-product .product {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #254083;
+  padding-left: 25px;
+}
+.rates-table-price .rates-table-liquid .liquid {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #254083;
+  padding-right: 45px;
+  padding-left: 25px;
+}
+.rates-table .rates-table-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rates-table .rates-table-liquid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rates-table-product,
+.rates-table-liquid {
+  background: #ffffff;
+  box-shadow: 0px 1px 7px rgba(206, 222, 250, 0.5);
+  border-radius: 10px;
+  width: 1300px;
+  height: 64px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------- Order system section ----------------------------------------------------- */
+/* ---------------card-hover------------ */
+.card {
+  background: #ffffff;
+  box-shadow: 0px 1px 7px rgba(206, 222, 250, 0.5);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 0;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+/*------------------------------------------ */
+.cards .top_header h3 {
+  font-family: "Montserrat";
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 0em;
+  color: #254083;
+}
+.cards .top_header {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px 0px;
+}
+.container .order_system .card-body .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0em;
+  color: #254083;
+}
+.container .order_system .card-body .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #404040;
+  width: 280px;
+  padding-right: 15px;
+}
+.order_system {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order_system img {
+  width: 40px;
+  margin: 70px 0px 0px 35px;
+}
+
+/* -------------------------------------------------------- News section ----------------------------------------------------- */
+.news .top_header h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: 0em;
+  color: #254083;
+}
+.news .top_header {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 50px 0px;
+}
+.cards_updates {
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 30px;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.cards_updates .card-body .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #254083;
+  padding: 10px 0px;
+}
+.cards_updates .card-body .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #404040;
+  width: 100%;
+  height: 40px;
+}
+.cards_updates .card {
+  width: 19rem;
+}
+.cards_updates .card-body .card_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards_updates .card-body .card_bottom h5 {
+  width: 15%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: #254083;
+}
+/* --------------------------------------------------------brend icons slide section ----------------------------------------------------- */
+.brend_icons .icons_card {
+  height: 250px;
+  width: 80%;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 1px 7px rgba(206, 222, 250, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.brend_icons .icons_card .brend-icon-slider .item {
+  list-style: none;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------------------------------------bottom section ----------------------------------------------------- */
+.bottom .last-part {
+  height: 340px;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px;
+  background: #254083;
+  box-shadow: 0px -1px 7px rgba(168, 168, 168, 0.25);
+  border-bottom: solid 2px #506fbd;
+  border-top: solid 2px #506fbd;
+}
+.last-part .bottom-side-menu .left,
+.last-part .bottom-side-menu .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.bottom-side-menu {
+  max-width: 1300px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bottom-side-menu .kargo-logo {
+  margin-bottom: 60px;
+}
+.menu-bar .menu-services {
+  list-style: none;
+  line-height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0em;
+  cursor: pointer;
+  padding: 0;
+}
+.menu-bar .menu-services a {
+  transition: all 0.35s ease;
+}
+.menu-bar .menu-services a:hover {
+  color: #ffab21;
+  transform: scale(1.1);
+}
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.bottom-menu h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+}
+.bottom-menu {
+  margin-top: 20px;
+}
+.bottom-link {
+  margin-bottom: 30px;
+}
+.bottom-menu,
+.bottom-link {
+  color: #ffffff;
+}
+.bottom-link {
+  font-family: "Poppins", sans-serif;
+}
+.bottom-link h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 27px;
+}
+.bottom-link .email,
+.bottom-link .adress {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0;
+}
+.bottom-link .link-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.bottom-link .link-items a {
+  transition: all 0.35s ease;
+}
+.bottom-link .link-items a:hover {
+  transition: all 0.35s ease;
+  color: #ffab21;
+}
+
+.bottom-link a {
+  transition: all 0.35s ease;
+}
+.bottom-link a:hover {
+  transition: all 0.35s ease;
+  color: #ffab21;
+}
+.social-media .social-media-icons h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.social-media-icons .social-icons {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 20px 0px 35px 0px;
+  cursor: pointer;
+}
+.social-media-icons .social-icons i {
+  transition: all 0.3s ease;
+}
+.social-media-icons .social-icons i:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+.app h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0em;
+  color: #ffffff;
+}
+.app .store-apps {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+/* -------------------------------------------------------- copyright section ----------------------------------------------------- */
+.end {
+  height: 65px;
+  top: 0px;
+  left: 0px;
+  background: #254083;
+  box-shadow: 0px -1px 7px rgba(168, 168, 168, 0.25);
+}
+.copyright {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyright .copyright-items {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+.copyright h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  padding-top: 20px;
+}
+.kargo-logo-end {
+  display: none;
+}
+.app .store-apps img {
+  width: 125px;
+  height: 40px;
+}

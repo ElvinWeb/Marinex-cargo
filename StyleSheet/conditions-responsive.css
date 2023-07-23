@@ -1,0 +1,366 @@
+@media only screen and (max-width: 1301px) {
+  * {
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .brend_icons .icons_card {
+    width: 88%;
+  }
+  .copyright {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .bottom-side-menu .bottom-menu {
+    padding: 10px 20px;
+  }
+  .bottom-link {
+    margin: 0px -10px;
+  }
+  .last-part .bottom-side-menu {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  .social-media .social-media-icons h3 {
+    width: 98%;
+  }
+  .bottom-link .adress {
+    display: block;
+    width: 90%;
+  }
+  .left .kargo-logo {
+    transform: translate(0px);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  * {
+    box-sizing: border-box;
+  }
+  .navbar .phone,
+  .navbar .currency {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 750px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .navbar .items {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+  .items .sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 28%;
+    gap: 25px;
+  }
+
+  .items .sign #login {
+    width: 100%;
+  }
+  .order-btn,
+  .services {
+    display: none;
+  }
+  .menubar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+  }
+  .menu-icon,
+  .plus {
+    display: block;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .menubar .dropdown-menu {
+    position: fixed;
+    background: #fafafa;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: block;
+    justify-content: flex-start;
+    transition: all 0.5s ease;
+    overflow-y: scroll;
+    border-radius: 0;
+    top: 0;
+  }
+  .menubar .dropdown-menu.open {
+    transform: translateX(-100%);
+    left: 0;
+  }
+  .menubar .dropdown-menu .menu_items {
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    color: #254083;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+  .dropdown-menu .close-icon {
+    font-size: 30px;
+    cursor: pointer;
+    align-items: center;
+  }
+  .menu-line .close-icon {
+    padding: 0px 0px 0px 30px;
+    margin-bottom: 30px;
+  }
+  .dropdown-menu .curr {
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: #254083;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    padding: 20px 0px 20px 20px;
+    border-top: 2px solid #d6d1d1;
+    border-bottom: 2px solid #d6d1d1;
+  }
+  .dropdown-menu .curr li i {
+    font-weight: 200;
+  }
+  .dropdown-menu .menu-phone {
+    border-top: 1px solid #d6d1d1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    color: #254083;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    padding: 20px;
+  }
+  .dropdown-menu .menu-icons {
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  .end .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 850px;
+  }
+
+  .bottom .last-part {
+    height: 600px;
+  }
+  .bottom-side-menu {
+    flex-direction: column;
+  }
+  .bottom-side-menu .left {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 50% !important;
+  }
+
+  .bottom-side-menu .right {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 65% !important;
+  }
+  .bottom-link .adress {
+    width: 100%;
+  }
+  .border-log {
+    display: block !important;
+    border: 1px solid #506fbd;
+    width: 80%;
+  }
+  .faq {
+    max-width: 700px !important;
+  }
+  .questions {
+    padding: 40px 0px;
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 600px;
+  }
+  .page-map {
+    padding-left: 60px;
+  }
+  .bottom-side-menu .left {
+    display: flex !important;
+    align-items: center !important;
+    width: 70% !important;
+    gap: 0 !important;
+  }
+
+  .bottom-link .adress {
+    width: 70%;
+  }
+  .bottom-link .link-items {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .social-media .social-media-icons h3 {
+    width: 250px !important;
+  }
+  .end .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 650px;
+  }
+  .bottom-side-menu .kargo-logo {
+    transform: translate(20px, -20px);
+  }
+  .condition-options .options {
+    width: 100%;
+    overflow: scroll;
+    max-width: 700px;
+  }
+  .condition-options .options li {
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .banned-food {
+    padding: 80px 0px 0px 60px;
+  }
+  .faq {
+    max-width: 550px !important;
+  }
+  .questions {
+    padding: 40px 0px;
+    margin-left: -20px;
+    max-width: 500px;
+  }
+  .privacy {
+    padding: 80px 0px 0px 50px;
+  }
+}
+@media only screen and (max-width: 565px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 490px;
+    margin: 0 auto;
+  }
+  .items .sign {
+    max-width: 38%;
+  }
+  .menubar .dropdown-menu {
+    width: 100%;
+  }
+  .items .social-media-icons i {
+    font-size: 20px;
+  }
+  .bottom-link {
+    position: relative;
+    right: 25px;
+    top: -15px;
+  }
+  .page-map {
+    padding-left: 50px;
+  }
+  .left .kargo-logo {
+    display: none !important;
+  }
+  .kargo-logo-end {
+    display: block;
+    padding: 45px;
+  }
+  .border-log {
+    display: none !important;
+  }
+
+  .bottom .last-part {
+    height: 720px;
+  }
+  .end {
+    height: 280px;
+  }
+  .end .copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .copyright .copyright-items {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 65px;
+    margin-right: 35px;
+  }
+  .left .bottom-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    flex-direction: column !important;
+    column-gap: 50px;
+  }
+  .app .store-apps img {
+    width: 145px;
+    height: 44px;
+  }
+  .social-media {
+    position: relative;
+    top: 47px;
+    right: 100px;
+  }
+  .border-social {
+    display: block !important;
+    border: 1px solid #506fbd;
+    width: 561px;
+    transform: translate(0, 30px);
+  }
+  .social-media .social-media-icons h3 {
+    width: 250px !important;
+  }
+  .page-map {
+    padding-left: 50px;
+  }
+  .questions {
+    margin-left: -70px;
+    max-width: 400px;
+  }
+}

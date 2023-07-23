@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
+    integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="../StyleSheet/placesRates.css" />
+  <link rel="stylesheet" href="../StyleSheet/placesRates-responsive.css" />
+
+  <title>Places Page</title>
+</head>
+
+<body>
+  <header class="header">
+    <div id="progress">
+      <span class="progress-value">&#x1F815;</span>
+    </div>
+    <div class="navbar">
+      <div class="phone">
+        <div class="num1">
+          <i class="fa-solid fa-phone" style="color: #ffab21; font-size: 14px"></i>
+          <span> +944 51 440 01 40 </span>
+        </div>
+        <div class="num2">
+          <i class="fa-solid fa-phone" style="color: #ffab21; font-size: 14px"></i>
+          <span> +994 12 514 07 06 </span>
+        </div>
+      </div>
+      <div class="currency">
+        <div class="usd">
+          <h5>USD<i> - 1.7000</i></h5>
+        </div>
+        <div class="try">
+          <h5>TRY<i> - 0.1065</i></h5>
+        </div>
+        <div class="eur">
+          <h5>EUR<i> - 1.7851</i></h5>
+        </div>
+      </div>
+      <div class="items">
+        <div class="social-media-icons">
+          <i class="fa-brands fa-telegram" style="color: #ffffff"></i>
+          <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+        </div>
+
+        <div class="sign">
+          <a href="../Html/register.html" id="register">Qeydiyyat</a>
+          <a href="../Html/sign.html" id="login">Daxil ol</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="menubar">
+    <div class="dropdown-menu">
+      <div class="d-felx menu-line">
+        <div class="logo p-4">
+          <img src="../Project photos/marinex cargo.svg" />
+        </div>
+        <i class="fa-sharp fa-solid fa-square-xmark close-icon" style="color: #254083"></i>
+      </div>
+      <ul class="curr">
+        <li>USD <i>- 1.7000</i></li>
+        <li>TRY <i>- 0.1065</i></li>
+        <li>EUR <i>- 1.7851</i></li>
+      </ul>
+      <ul class="menu_items">
+        <li><a href="../Html/About.html">Haqqımızda</a></li>
+        <li><a href="../Html/rates.html">Tariflər</a></li>
+        <li><a href="../Html/placesRates.html">Məntəqə Tarifləri</a></li>
+        <li><a href="../Html/shops.html">Mağazalar</a></li>
+        <li><a href="../Html/news.html">Xəbərlər</a></li>
+        <li><a href="../Html/Services.html">Xidmətlər</a></li>
+        <li><a href="../Html/conditions.html">Danışma şərtləri</a></li>
+        <li><a href="../Html/connection.html">Əlaqə</a></li>
+      </ul>
+      <div class="menu-phone">
+        <div class="menu-num1">
+          <i class="fa-solid fa-phone" style="color: #ffab21; font-size: 16px"></i>
+          <span> +944 51 440 01 40 </span>
+        </div>
+        <div class="menu-num2">
+          <i class="fa-solid fa-phone" style="color: #ffab21; font-size: 16px"></i>
+          <span> +994 12 514 07 06 </span>
+        </div>
+      </div>
+      <div class="menu-icons">
+        <i class="fa-brands fa-telegram" style="color: #254083"></i>
+        <i class="fa-brands fa-facebook" style="color: #254083"></i>
+        <i class="fa-brands fa-instagram" style="color: #254083"></i>
+      </div>
+    </div>
+    <div class="container">
+      <div class="menu-icon">
+        <img src="../Project photos/humburger.png" />
+      </div>
+      <div class="logo">
+        <img src="../Project photos/marinex cargo.svg" />
+      </div>
+      <div class="plus">
+        <img src="../Project photos/plus.png" />
+      </div>
+      <div class="services">
+        <ul class="services_items">
+          <li><a href="../Html/About.html">Haqqımızda</a></li>
+          <li><a href="../Html/rates.html">Tariflər</a></li>
+          <li><a href="../Html/placesRates.html">Məntəqə Tarifləri</a></li>
+          <li><a href="../Html/shops.html">Mağazalar</a></li>
+          <li><a href="../Html/shops.html">Xəbərlər</a></li>
+          <li><a href="../Html/Services.html">Xidmətlər</a></li>
+          <li><a href="../Html/conditions.html">Danışma şərtləri</a></li>
+          <li><a href="../Html/connection.html">Əlaqə</a></li>
+        </ul>
+      </div>
+      <div class="order-btn">
+        <button class="btn glow-button">Sifariş et</button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <ul class="page-map">
+      <li><a href="../Html/index.html">ana sehife</a></li>
+      <li><a href="" style="color: #254083">məntəqə tarifləri</a></li>
+    </ul>
+    <section id="places">
+      <div class="row">
+        <div class="places-rates">
+          <div class="places-header">
+            <h2>Məntəqə tarifləri</h2>
+          </div>
+          <div class="locations">
+            <ul class="places-name">
+              <li class="location"><a href="#">Bərdə</a></li>
+              <li class="location"><a href="#">Tərtər</a></li>
+              <li class="location"><a href="#">Mingəçevir</a></li>
+              <li class="location"><a href="#">Ağcabədi</a></li>
+              <li class="location"><a href="#">Gəncə</a></li>
+              <li class="location"><a href="#">Lənkəran</a></li>
+              <li class="location"><a href="#">Xırdalan</a></li>
+              <li class="location"><a href="#">Sumqayıt</a></li>
+              <li class="location"><a href="#">Şəki</a></li>
+              <li class="location"><a href="#">Baləkən</a></li>
+              <li class="location"><a href="#">Qəbələ</a></li>
+              <li class="location"><a href="#">Beylaqan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="rates mt-5">
+        <div class="rates-table">
+          <table class="rates">
+            <tbody class="rates-table-price">
+              <tr class="rates-header-items">
+                <th></th>
+                <td>0.00 kg - 0.10 kg</td>
+                <td>0.10 kg - 0.25 kg</td>
+                <td>0.25 kg - 0.50 kg</td>
+                <td>0.50 kg - 0.75 kg</td>
+                <td>0.75 kg - 1.00 kg</td>
+                <td>1.00 kg və üzəri</td>
+              </tr>
+              <tr class="rates-table-product">
+                <th class="product">Adi Mehsul</th>
+                <td>0.75 USD</td>
+                <td>1.00 USD</td>
+                <td>2.50 USD</td>
+                <td>3.50 USD</td>
+                <td>4.00 USD</td>
+                <td>kg / 3.00 USD</td>
+              </tr>
+              <tr class="rates-table-liquid mt-4">
+                <th class="liquid">Maye</th>
+                <td>0.75 USD</td>
+                <td>1.00 USD</td>
+                <td>2.50 USD</td>
+                <td>3.50 USD</td>
+                <td>4.00 USD</td>
+                <td>kg / 3.00 USD</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="mobile-table">
+        <table class="table-details">
+          <tr>
+            <th>Çəki</th>
+            <th>Maye</th>
+            <th>Adi</th>
+          </tr>
+          <tr>
+            <td style="width: 30%">0.00 kg - 0.10 kg</td>
+            <td>0.75 USD</td>
+            <td>0.75 USD</td>
+          </tr>
+          <tr>
+            <td>0.10 kg - 0.25 kg</td>
+            <td>0.75 USD</td>
+            <td>0.75 USD</td>
+          </tr>
+          <tr>
+            <td>0.25 kg - 0.50 kg</td>
+            <td>0.75 USD</td>
+            <td>0.75 USD</td>
+          </tr>
+          <tr>
+            <td>0.50 kg - 0.75 kg</td>
+            <td>0.75 USD</td>
+            <td>0.75 USD</td>
+          </tr>
+          <tr>
+            <td>0.75 kg - 1.00 kg</td>
+            <td>0.75 USD</td>
+            <td>0.75 USD</td>
+          </tr>
+          <tr>
+            <td>1.00 kg və üzəri</td>
+            <td>0.75 USD</td>
+            <td>0.75 USD</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="bottom mt-5">
+      <div class="last-part">
+        <div class="bottom-side-menu">
+          <div class="left">
+            <div class="kargo-logo">
+              <img src="../Project photos/marinex light.svg" class="img-fluid" alt="" />
+            </div>
+            <div class="bottom-menu">
+              <div class="menu-bar">
+                <ul class="menu-services">
+                  <li><a>Haqqımızda</a></li>
+                  <li><a>Tariflər</a></li>
+                  <li><a>Mağazalar</a></li>
+                  <li><a>Xəbərlər</a></li>
+                </ul>
+                <ul class="menu-services">
+                  <li><a>Xəbərlər</a></li>
+                  <li><a>Məntəqələr</a></li>
+                  <li><a>Daşınma şərtləri</a></li>
+                  <li><a>Əlaqə</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <span class="border-log" style="display: none"></span>
+          <div class="right">
+            <div class="bottom-link">
+              <span class="adress">Bakı şəh. Nərimanov r. Nazim Hacıyev küçəsi</span>
+              <ul class="link-items">
+                <li><a>+994 51 440 01 40</a></li>
+                <li><a>+994 12 514 07 06</a></li>
+              </ul>
+              <span class="email"><a>info.@hello.az</a></span>
+            </div>
+            <span class="border-social" style="display: none"></span>
+            <div class="social-media">
+              <div class="social-media-icons mt-3">
+                <h3>Ən son yeniliklərdən və endirimlərdən xəbərdar olun.</h3>
+                <div class="social-icons">
+                  <i class="fa-brands fa-telegram" style="color: #ffffff"></i>
+                  <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+                  <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+                </div>
+              </div>
+              <div class="app">
+                <h3>Tezlikle</h3>
+                <div class="store-apps">
+                  <img src="../Project photos/image 31.svg" alt="" />
+                  <img src="../Project photos/image 32.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <div class="copyright">
+        <div class="kargo-logo-end">
+          <img src="../Project photos/marinex light.svg" class="img-fluid" alt="" />
+        </div>
+        <ul class="copyright-items">
+          <li>Marinex 2022</li>
+          <li>Legal Terms</li>
+          <li>Privacy Policy</li>
+        </ul>
+        <h4>Site by JEDAI</h4>
+      </div>
+    </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+    integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
